@@ -1,25 +1,25 @@
 # Mern Dashboard
 ## FullStack MERN focusing on Backend DataModel / deployed on render.com
 
-#### Stacks 
-MERN Material UI 
-Grid Nivo for Charts 
-Redux Toolkit - statemanagement 
-RTK Query - Redux Toolkit - API Call
+### Stacks 
+## MERN Material UI 
+## Grid Nivo for Charts 
+## Redux Toolkit - statemanagement 
+## RTK Query - Redux Toolkit - API Call
 
-#### Node js Runtime Express JS - backend framwork Mongoose for Managing mongoDB
+### Node js Runtime Express JS - backend framwork Mongoose for Managing mongoDB
 
-#### Frontend Material UI
+### Frontend Material UI
 
-#### Navigation
+### Navigation
 
-#### Products
+### Products
 
-#### Customers
+### Customers
 
-#### Transaction
+### Transaction
 
-#### Geography displays users locations
+### Geography displays users locations
 
 ## Available Scripts
 
