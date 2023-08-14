@@ -5,6 +5,14 @@ import { useSelector } from 'react-redux';
 import { themeSettings } from 'theme';
 
 import './App.css';
+import {
+	BrowserRouter,
+	Routes,
+	Route,
+	Navigate,
+} from 'react-router-dom';
+import Dashboard from 'scenes/dashboard';
+import Layout from 'scenes/layout';
 
 function App() {
 	const mode = useSelector((state) => state.global.mode);
@@ -15,9 +23,25 @@ function App() {
 
 	return (
 		<div className="app">
-			<ThemeProvider theme={theme}>
-				<CssBaseline />
-			</ThemeProvider>
+			<BrowserRouter>
+				<ThemeProvider theme={theme}>
+					<CssBaseline />
+					<Routes>
+						<Route element={<Layout />}>
+							<Route
+								path="/"
+								element={
+									<Navigate to="/dashboard" replace />
+								}
+							/>
+							<Route
+								path="/dashboard"
+								element={<Dashboard />}
+							/>
+						</Route>
+					</Routes>
+				</ThemeProvider>
+			</BrowserRouter>
 		</div>
 	);
 }
